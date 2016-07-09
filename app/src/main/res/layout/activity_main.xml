@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:stringbox="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dl_main_draw"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <!--抽屉-->
+    <FrameLayout
+        android:id="@+id/fl_main_left"
+        android:layout_gravity="left"
+        android:layout_width="140dp"
+        android:background="#ff0000"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+    <!--内容-->
+    <LinearLayout
+        android:id="@+id/ll_main_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent" >
+
+        <org.itheima.tabindicator.library.TabIndicator
+            android:id="@+id/ti_main_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            stringbox:tiTabMode="rect"
+            stringbox:tiRectColor="#55ff8400"
+            stringbox:tiRectStyle="stroke"
+            stringbox:tiRectRadius="8dp"
+            />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_main_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>

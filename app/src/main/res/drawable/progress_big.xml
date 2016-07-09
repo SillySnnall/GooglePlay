@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--进度条旋转-->
+    <item >
+        <!--正向旋转-->
+        <rotate android:drawable="@drawable/spinner_big_outer" android:fromDegrees="0" android:toDegrees="720"/>
+        <!--反向旋转-->
+        <rotate android:drawable="@drawable/spinner_big_inner" android:fromDegrees="1080" android:toDegrees="0"/>
+    </item>
+</layer-list>
